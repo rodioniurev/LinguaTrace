@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Internet for translation API calls + sync server -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Microphone for voice input (speech-to-text) -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!--
+        flutter_gemma downloads ~500 MB – 1.6 GB model files. Android 14+ kills
+        long-running background work without a foreground service; this lets the
+        download finish even if the user backgrounds the app, and lets the
+        plugin show a progress notification.
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- «Идеи»: dictation keeps hearing with the screen off (DictationService). -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <!-- The Bluetooth headset's microphone for dictation (optional). -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <!--
+        Android 11+ package visibility: without this <queries> block the app
+        cannot see the system speech recognizer, SpeechToText.initialize()
+        returns false, and the mic button silently does nothing.
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+        <!-- Claude's answers read aloud: the text-to-speech engine. -->
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+        <!-- «Открыть оригинал» in the feed: url_launcher must see a browser. -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
+
+    <application
+        android:label="LinguaTrace"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- Standard launcher intent -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--
+                Receive text selected and shared from ANY app
+                (e.g., long-press → Share → LinguaTrace)
+                This is the mobile equivalent of the desktop hotkey.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <!--
+                "Translate" option in Android text selection menu
+                (appears in the floating toolbar when text is selected)
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Long dictation with the screen off: a microphone foreground service. -->
+        <service
+            android:name=".DictationService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
+
+        <!-- Flutter engine background service -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <!--
+            ML Kit Translation: declare that this app uses on-device models.
+            This allows Google Play to pre-install models for your supported languages.
+        -->
+        <meta-data
+            android:name="com.google.mlkit.nl.translate.DEPENDENCIES"
+            android:value="en,ru,es" />
+
+        <!--
+            flutter_gemma asks for the GPU backend (PreferredBackend.gpu).
+            Without these declarations the OpenCL libraries cannot be loaded and
+            the model fails to initialise right after a successful download.
+            required="false" keeps the app installable on GPU-less devices.
+        -->
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="false" />
+        <uses-native-library
+            android:name="libOpenCL-car.so"
+            android:required="false" />
+        <uses-native-library
+            android:name="libOpenCL-pixel.so"
+            android:required="false" />
+
+    </application>
+
+</manifest>

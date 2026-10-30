@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-made fixture. Deliberately broken: a bare '&', raw control
+     characters (U+0001 in a title, U+000B in a description) and one item
+     with an unclosed <b> that makes the whole document invalid XML. -->
+<rss version="2.0">
+<channel>
+<title>Feed roto</title>
+<item>
+<title>Tom & Jerry vuelven a los cines españoles este otoño</title>
+<link>https://roto.example/cine/tom-jerry?a=1&b=2</link>
+<description>La productora confirma el estreno para noviembre & promete una versión restaurada del clásico de animación.</description>
+<pubDate>Sat, 26 Sep 2026 10:00:00 GMT</pubDate>
+</item>
+<item>
+<title>Una etiqueta sin cerrar rompe este elemento del feed</title>
+<link>https://roto.example/roto</link>
+<description>Texto con <b>negrita sin cerrar y sin CDATA, lo que invalida el documento entero.</description>
+<pubDate>Sat, 26 Sep 2026 11:00:00 GMT</pubDate>
+</item>
+<item>
+<title>El Ayuntamiento anuncia nuevas líneas de autobús nocturno</title>
+<link>https://roto.example/ciudad/buhos</link>
+<description>Las tres nuevas líneas conectarán el centro con los barrios del sur a partir del lunes, según el consistorio.</description>
+<pubDate>Sat, 26 Sep 2026 12:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

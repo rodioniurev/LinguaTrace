@@ -1,0 +1,23 @@
+[Unit]
+Description=LinguaTrace sync server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=linguatrace
+Group=linguatrace
+WorkingDirectory=/var/lib/linguatrace
+# 127.0.0.1: reached only through Caddy (HTTPS). With Tailscale instead,
+# use --host 0.0.0.0 and keep the port closed to the internet.
+ExecStart=/usr/local/bin/linguatrace-sync serve --host 127.0.0.1 --port 8790 --data /var/lib/linguatrace/data --keys /var/lib/linguatrace/keys.txt
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/linguatrace
+PrivateTmp=true
+MemoryMax=256M
+
+[Install]
+WantedBy=multi-user.target

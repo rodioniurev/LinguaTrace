@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Dark background with rounded corners -->
+  <rect width="1024" height="1024" rx="224" fill="#1e1e2e"/>
+
+  <!-- Top-left speech bubble (blue) -->
+  <g opacity="0.9">
+    <rect x="180" y="220" width="340" height="240" rx="32" fill="#89b4fa"/>
+    <polygon points="220,460 250,460 235,500" fill="#89b4fa"/>
+  </g>
+
+  <!-- Center speech bubble (teal) -->
+  <g opacity="0.85">
+    <rect x="340" y="340" width="340" height="240" rx="32" fill="#94e2d5"/>
+    <polygon points="400,580 430,580 415,620" fill="#94e2d5"/>
+  </g>
+
+  <!-- Bottom-right speech bubble (mauve) -->
+  <g opacity="0.8">
+    <rect x="500" y="460" width="340" height="240" rx="32" fill="#cba6f7"/>
+    <polygon points="560,700 590,700 575,740" fill="#cba6f7"/>
+  </g>
+</svg>

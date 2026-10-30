@@ -1,0 +1,781 @@
+{
+  "@@locale": "en",
+  "tabTranslate": "Translate",
+  "tabCorrect": "Correct",
+  "tabHistory": "History",
+  "tabPatterns": "Patterns",
+  "tabSettings": "Settings",
+  "copied": "Copied!",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "tooltipClear": "Clear",
+  "tooltipCopy": "Copy",
+  "tooltipPaste": "Paste",
+  "typeOrSpeak": "Type or speak...",
+  "listening": "Listening...",
+  "chipIdiom": "Idiom",
+  "chipWords": "Words",
+  "chipContext": "Context",
+  "viaProvider": "via {name}",
+  "@viaProvider": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "noProverbsFound": "No proverbs found for this phrase",
+  "idiomsFoundHeader": "Found: {count} · language: {lang}",
+  "@idiomsFoundHeader": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
+  "pickSourceBeforeSwap": "Pick a source language before swapping",
+  "culturalContext": "Cultural context",
+  "contextFailed": "Failed to get context: {error}",
+  "@contextFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "addAiKeyHint": "AI is needed. On a computer: Settings → AI assistant → “Claude · subscription”. Free: a compatible service (Gemini, Groq) or Ollama with a model.",
+  "tooltipStop": "Stop",
+  "tooltipDictate": "Tap: dictate at cursor · Long-press: clear & dictate",
+  "allMeanings": "All meanings",
+  "grammar": "Grammar",
+  "breakingDown": "Breaking down...",
+  "searchingProverbs": "Searching proverbs...",
+  "literalLabel": "literal: {text}",
+  "@literalLabel": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "autoDetect": "Auto-detect",
+  "autoMarker": "(auto)",
+  "pluralTag": "pl. {plural}",
+  "@pluralTag": {
+    "placeholders": {
+      "plural": {
+        "type": "String"
+      }
+    }
+  },
+  "etymLabel": "etym.",
+  "historyTitle": "History ({count})",
+  "@historyTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "searchHint": "Search...",
+  "confirmDeletion": "Confirm deletion",
+  "deleteEntriesQuestion": "Delete {count} entries?",
+  "@deleteEntriesQuestion": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "deleteEntriesFilteredQuestion": "Delete {count} entries ({filter})?",
+  "@deleteEntriesFilteredQuestion": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "filter": {
+        "type": "String"
+      }
+    }
+  },
+  "olderThanDaysDesc": ">{days} days old",
+  "@olderThanDaysDesc": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "selectEntries": "Select entries",
+  "selectedCount": "{count} selected",
+  "@selectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "allLabel": "All",
+  "tooltipDeleteSelected": "Delete selected",
+  "tooltipDeleteShown": "Delete shown entries",
+  "tooltipSelect": "Select",
+  "olderThanChip": ">{days} d",
+  "@olderThanChip": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "clearFilters": "Clear",
+  "noEntriesMatchFilter": "No entries match the filter",
+  "noTranslationsYet": "No translations yet.\nUse the Translate tab!",
+  "patternsTitle": "Patterns",
+  "statTotal": "Total",
+  "statPairs": "Pairs",
+  "statHard": "Hard",
+  "myMistakes": "My mistakes ({count})",
+  "@myMistakes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "training": "Training",
+  "mistakesHint": "Check your texts in the Correct tab — mistakes will be remembered here and turned into training sessions.",
+  "wordsLookedUpRepeatedly": "Words you look up repeatedly",
+  "noRepeatedPatterns": "No repeated patterns yet.",
+  "timesCount": "{count}x",
+  "@timesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsTitle": "Settings",
+  "sectionAppearance": "Appearance",
+  "themeLabel": "Theme",
+  "themeDark": "Dark",
+  "themeMedium": "Medium",
+  "themeLight": "Light",
+  "themeExtra": "Extra",
+  "fontSizeLabel": "Font size",
+  "fontPreview": "Preview: Aa Бб Ññ",
+  "sectionOfflineTranslation": "Offline Translation",
+  "preferOffline": "Prefer offline translation",
+  "preferOfflineDesc": "Use on-device engines (ML Kit / local LLM) instead of online APIs.",
+  "sectionAiAssistant": "AI assistant (Claude / ChatGPT)",
+  "aiKeyDesc": "AI checks what you write, explains mistakes and idioms, and builds practice from YOUR data. On a computer the simplest option is your Claude subscription through Claude Code — no API key or extra payment.",
+  "providerLabel": "Provider",
+  "providerAuto": "Auto (any configured)",
+  "providerCustom": "Custom / free",
+  "customApiHint": "Any OpenAI-compatible service. Free options: Gemini (aistudio.google.com), Groq (console.groq.com), OpenRouter (models tagged “:free”), or a local LM Studio / llama.cpp server.",
+  "customBaseUrlLabel": "API base URL (without /chat/completions)",
+  "customModelLabel": "Model name",
+  "customKeyLabel": "API key (leave empty for a local server)",
+  "presetLabel": "Presets",
+  "freeLocalHintTitle": "Free and local",
+  "freeLocalHintBody": "Ollama needs no keys and has no limits. Install it from ollama.com, run “ollama pull qwen2.5:3b”, then turn on the switch below — Correct, Context and Training all work for free.",
+  "ollamaTitle": "Ollama — local and free",
+  "ollamaDesc": "Your own model on this computer: no keys, no limits, no text leaving the machine.",
+  "ollamaUrlLabel": "Ollama address",
+  "ollamaModelLabel": "Model",
+  "ollamaCheck": "Test connection",
+  "ollamaChecking": "Checking…",
+  "ollamaOk": "Ollama responds. Available models: {models}",
+  "@ollamaOk": {
+    "placeholders": {
+      "models": {
+        "type": "String"
+      }
+    }
+  },
+  "ollamaNoModels": "Ollama responds but has no models. Run: ollama pull {model}",
+  "@ollamaNoModels": {
+    "placeholders": {
+      "model": {
+        "type": "String"
+      }
+    }
+  },
+  "ollamaModelMissing": "Model “{model}” is not installed. Run: ollama pull {model}",
+  "@ollamaModelMissing": {
+    "placeholders": {
+      "model": {
+        "type": "String"
+      }
+    }
+  },
+  "ollamaUnreachable": "Ollama is not responding at {url}. Start the Ollama app and retry.",
+  "@ollamaUnreachable": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "providerKeyMissing": "No API key for “{provider}” — enter it below or pick another provider",
+  "@providerKeyMissing": {
+    "placeholders": {
+      "provider": {
+        "type": "String"
+      }
+    }
+  },
+  "anthropicKeyLabel": "Anthropic API key (Claude)",
+  "openaiKeyLabel": "OpenAI API key (ChatGPT)",
+  "sectionOnlineTranslators": "Online Translators",
+  "preferredLabel": "Preferred",
+  "googleFreeDesc": "Free, no key needed",
+  "apiKeyLabel": "API Key",
+  "sectionAbout": "About",
+  "mlkitModelsTitle": "ML Kit offline models",
+  "mlkitOnlyMobile": "Only available on Android/iOS. On desktop use the on-device LLM below.",
+  "mlkitModelsSize": "ML Kit offline models (~30 MB each)",
+  "modelDownloadedOffline": "Downloaded — works offline",
+  "modelNotDownloaded": "Not downloaded",
+  "deleteModel": "Delete model",
+  "downloadModel": "Download model",
+  "downloadFailedWithError": "Download failed: {error}",
+  "@downloadFailedWithError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteFailedWithError": "Delete failed: {error}",
+  "@deleteFailedWithError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "onDeviceLlmTitle": "On-device LLM (Gemma / Qwen)",
+  "llmInstalledReady": "{name} — installed, ready",
+  "@llmInstalledReady": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "llmDownloadDesc": "~500 MB – 1.6 GB download, runs fully offline",
+  "downloadingPercent": "Downloading… {percent}%",
+  "@downloadingPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "modelTokenButton": "Model / token",
+  "modelUrlLabel": "Model URL (.task / .litertlm)",
+  "hfTokenLabel": "HuggingFace token (gated models)",
+  "saveUrlToken": "Save URL / token",
+  "modelSettingsSaved": "Model settings saved",
+  "modelInstalled": "Model installed",
+  "modelDownloadFailed": "Download failed",
+  "modelGatedHint": "This model is license-gated on Hugging Face (HTTP 401). Paste an HF token under “Model / token” (after accepting the license on the model page) or keep the open default model (Qwen2.5).",
+  "deleteOnDeviceModelQuestion": "Delete on-device model?",
+  "deleteOnDeviceModelDesc": "This frees disk space but the next on-device translation will need to download the model again.",
+  "polishTitle": "Polish",
+  "detailsButton": "Explain in depth",
+  "detailsLoading": "Preparing the breakdown…",
+  "detailsTitle": "Breakdown: rules, examples, word history",
+  "mistakesRecorded": "{count, plural, one{{count} mistake recorded — it will feed your training} other{{count} mistakes recorded — they will feed your training}}",
+  "@mistakesRecorded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "toTraining": "Go to training",
+  "dueForReview": "Due for review today: {count}",
+  "@dueForReview": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "nothingDue": "Nothing due today — a new session will pick up fresh mistakes",
+  "repetitionExplained": "Covered mistakes come back for review after 1, 3, 7, 21 and 60 days.",
+  "noBackendHint": "Writing correction needs an AI: on a computer pick “Claude · subscription” in Settings → AI assistant; on a phone add a Claude API key or a free compatible service.",
+  "writeSomethingIn": "Write something in {lang}…",
+  "@writeSomethingIn": {
+    "placeholders": {
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
+  "checking": "Checking…",
+  "checkButton": "Check",
+  "looksPerfect": "Looks perfect!",
+  "fixesCount": "{count, plural, =1{1 fix} other{{count} fixes}}",
+  "@fixesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "catGrammar": "grammar",
+  "catWord": "word",
+  "catArticle": "article",
+  "catSpelling": "spelling",
+  "catPunctuation": "punct.",
+  "catStyle": "style",
+  "generating": "Generating…",
+  "newTrainingFromMistakes": "New training from my mistakes",
+  "noTrainingsYet": "No trainings yet.\n\nCheck your texts in the Correct tab — mistakes are remembered, and a personal course is built from them: rule explanations, exercises and texts tailored to your weak spots.",
+  "saveToNotebook": "To notebook",
+  "savedToNotebook": "In notebook",
+  "savedToNotebookSnack": "Added to your notebook: {text}",
+  "@savedToNotebookSnack": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "ownTextCheckTitle": "Your {lang}",
+  "@ownTextCheckTitle": {
+    "placeholders": {
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
+  "ownTextChecking": "Checking what you wrote…",
+  "ownTextPerfect": "Written correctly",
+  "ownTextFixes": "Fixes: {count}",
+  "@ownTextFixes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notAnError": "Not a mistake",
+  "markedNotError": "Removed from your mistakes",
+  "upgradeLabel": "could be more natural",
+  "notRecordedLocal": "Not recorded as mistakes: small local models are often wrong.",
+  "sectionLearning": "What I'm developing",
+  "learningLangLabel": "Language I'm developing",
+  "autoCheckLabel": "Check my {lang} automatically",
+  "@autoCheckLabel": {
+    "placeholders": {
+      "lang": {
+        "type": "String"
+      }
+    }
+  },
+  "autoCheckDesc": "Whatever you type in this language on the Translate screen is checked in the background; real mistakes go to your notebook.",
+  "providerClaudeCode": "Claude · subscription (Claude Code)",
+  "providerClaudeApi": "Claude · API key",
+  "claudeModelLabel": "Claude model",
+  "claudeCodeTitle": "Claude Code on this computer",
+  "claudeCodeReady": "Installed {version} · signed in ({plan})",
+  "@claudeCodeReady": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      },
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "claudeCodeChecking": "Checking Claude Code…",
+  "refresh": "Refresh",
+  "checkConnection": "Test connection",
+  "checkingConnection": "Testing…",
+  "connectionOk": "Works: {backend} · {seconds} s",
+  "@connectionOk": {
+    "placeholders": {
+      "backend": {
+        "type": "String"
+      },
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "aiUsageMonth": "This month: {count} AI requests ({ok} successful), pay-per-use ≈ ${cost}",
+  "@aiUsageMonth": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "ok": {
+        "type": "int"
+      },
+      "cost": {
+        "type": "String"
+      }
+    }
+  },
+  "sectionDiagnostics": "Data and diagnostics",
+  "dataFolderLabel": "Data folder",
+  "settingsFileLabel": "Settings file",
+  "openFolder": "Open folder",
+  "settingsSaveFailed": "Settings were NOT saved: {error}",
+  "@settingsSaveFailed": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "importedLegacy": "History from older versions merged: {files} file(s), {rows} records",
+  "@importedLegacy": {
+    "placeholders": {
+      "files": {
+        "type": "int"
+      },
+      "rows": {
+        "type": "int"
+      }
+    }
+  },
+  "notebookTitle": "Notebook",
+  "notebookCounts": "{expressions} words and expressions · {mistakes} mistakes to work on",
+  "@notebookCounts": {
+    "placeholders": {
+      "expressions": {
+        "type": "int"
+      },
+      "mistakes": {
+        "type": "int"
+      }
+    }
+  },
+  "notebookEmpty": "Empty so far. Tap “To notebook” next to words and proverbs, and write in the language you are developing — mistakes will be added by themselves.",
+  "topConstructions": "My problem constructions",
+  "removeFromNotebook": "Remove from notebook",
+  "aiNeededTitle": "AI is not set up",
+  "trainingDone": "I've done this session",
+  "trainingDoneMarked": "Done — these mistakes come back on schedule (1 → 3 → 7 → 21 → 60 days).",
+  "removeWordLabel": "(remove)",
+  "tabFeed": "Feed",
+  "feedTitle": "Feed",
+  "feedToday": "Today: {count} stories · {due} due for review",
+  "@feedToday": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "due": {
+        "type": "int"
+      }
+    }
+  },
+  "feedBuildMore": "More stories",
+  "feedBuilding": "Writing today's edition…",
+  "feedEmpty": "Your feed is empty. It is written from today's real news and uses YOUR mistakes and the expressions you are taking into use.",
+  "feedBuildToday": "Write today's edition",
+  "feedFailedItems": "{count} stories were dropped: the model failed the fact or target checks.",
+  "@feedFailedItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "feedOpenOriginal": "Source: {outlet} — open the original",
+  "@feedOpenOriginal": {
+    "placeholders": {
+      "outlet": {
+        "type": "String"
+      }
+    }
+  },
+  "tasksTitle": "PRACTICE",
+  "yourMistakeShort": "you wrote «{wrong}» → «{right}»",
+  "@yourMistakeShort": {
+    "placeholders": {
+      "wrong": {
+        "type": "String"
+      },
+      "right": {
+        "type": "String"
+      }
+    }
+  },
+  "yourMistake": "You wrote: «{wrong}» → correct: «{right}»",
+  "@yourMistake": {
+    "placeholders": {
+      "wrong": {
+        "type": "String"
+      },
+      "right": {
+        "type": "String"
+      }
+    }
+  },
+  "gotIt": "Got it",
+  "taskCorrect": "Correct!",
+  "taskAccents": "Correct — mind the accents: {answer}",
+  "@taskAccents": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "taskWrong": "Answer: {answer}",
+  "@taskWrong": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "taskPlaceholder": "Write in Spanish…",
+  "taskCheck": "Check",
+  "taskTargetMissing": "The target expression wasn't used — try to include it next time.",
+  "taskModelAnswer": "Model answer: {answer}",
+  "@taskModelAnswer": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "journalTitle": "Journal",
+  "taskPending": "Saved. It will be checked when an AI is available — e.g. on your computer after the next exchange.",
+  "taskChecked": "Checked.",
+  "sectionExchange": "Exchange between devices",
+  "exchangeDesc": "Everything you accumulate — history, notebook, mistakes, trainings and feed editions with your answers — is kept in one exchange file per device and merged on the other one. Editions written on the computer with your Claude subscription can be read and practised on the phone; answers come back.",
+  "exchangeFolderLabel": "Exchange folder (one file per device)",
+  "exchangeUseOneDrive": "Use OneDrive",
+  "exchangeSyncNow": "Sync now",
+  "exchangeSyncing": "Syncing…",
+  "exchangeShare": "Send exchange file",
+  "exchangeLoad": "Load exchange file",
+  "exchangeReport": "Merged: {items} notebook items, {mistakes} mistakes, {feed} stories, {tasks} answers, {history} history records.",
+  "@exchangeReport": {
+    "placeholders": {
+      "items": {
+        "type": "int"
+      },
+      "mistakes": {
+        "type": "int"
+      },
+      "feed": {
+        "type": "int"
+      },
+      "tasks": {
+        "type": "int"
+      },
+      "history": {
+        "type": "int"
+      }
+    }
+  },
+  "exchangeNothingNew": "Nothing new to merge. Your file is updated.",
+  "exchangeGraded": "Checked answers from the other device: {count}",
+  "@exchangeGraded": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "exchangePhoneHint": "On the computer: save the file into its exchange folder (e.g. OneDrive\\LinguaTrace). Here: load the computer's file linguatrace-windows-….json.",
+  "feedPhoneHint": "Editions are written on the computer (Claude subscription). Load its exchange file: Settings → Exchange.",
+  "feedGlossAfterTask": "Explanations of the marked words appear after you answer the task below.",
+  "feedCannotOpen": "Could not open {url}",
+  "@feedCannotOpen": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "exchangeErrors": "Not everything was merged: {errors}",
+  "@exchangeErrors": {
+    "placeholders": {
+      "errors": {
+        "type": "String"
+      }
+    }
+  },
+  "exchangeFullHistory": "Include the full translation history",
+  "exchangeFullHistoryHint": "By default the file carries the notebook, mistakes, the feed and short lookups; long texts (letters) stay on this device. The file is plain text (JSON) — keep it in your own folders.",
+  "exchangeTooLarge": "This file is too large for an exchange file ({mb} MB).",
+  "@exchangeTooLarge": {
+    "placeholders": {
+      "mb": {
+        "type": "int"
+      }
+    }
+  },
+  "claudeCodeTokenInUse": "Installed {version} · using the subscription token",
+  "@claudeCodeTokenInUse": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "claudeCodeLogin": "Sign in to Claude Code",
+  "claudeCodeSetupToken": "Create a subscription token (1 year)",
+  "claudeCodeTokenLabel": "Subscription token (optional)",
+  "claudeCodeTokenHelp": "From `claude setup-token`: valid for a year, no repeated sign-in. Not an API key: it uses your subscription limits, no extra charge. Stored in settings.json on this computer.",
+  "claudeCodeConsoleLogin1": "Sign in to Claude Code with the account that has the subscription.",
+  "claudeCodeConsoleLogin2": "A browser opens: sign in and allow access. Then close this window and return to LinguaTrace.",
+  "claudeCodeConsoleToken1": "A one-year subscription token for LinguaTrace (not an API key, no extra charge).",
+  "claudeCodeConsoleToken2": "A browser opens: sign in. Then copy the line sk-ant-oat01-... and paste it into LinguaTrace: Settings - AI - Subscription token.",
+  "providerPcRelay": "Claude via your computer (subscription)",
+  "relayClientDesc": "The phone sends requests to LinguaTrace on your computer, which asks Claude on your subscription. No keys, no extra charge. On the PC: Settings - AI assistant - «Claude for the phone» shows the address and code.",
+  "relayAddressLabel": "Computer address",
+  "relayCodeLabel": "Pairing code",
+  "relayServerTitle": "Claude for the phone",
+  "relayServerDesc": "The phone can use this computer's Claude (your subscription, no extra charge) while LinguaTrace is running.",
+  "relayServerRunning": "Running. On the phone enter the address and the code:",
+  "relayNoNetwork": "No network — connect the computer to Wi-Fi or a local network.",
+  "relayNewCode": "New code",
+  "relayServerHint": "The phone and the computer must be on the same Wi-Fi. Away from home: install Tailscale on both and use the computer's 100.x.x.x address. The first time, Windows asks for network access — allow it for private networks.",
+  "fastModelLabel": "Model for quick answers",
+  "fastModelHint": "Text check, hints, word choice, origins. The main model above writes the feed and trainings.",
+  "claudeWarmLabel": "Keep Claude ready",
+  "claudeWarmHint": "Answers in 1–3 s instead of ~10 s: Claude Code stays running (≈150–250 MB of memory).",
+  "startupTimesLabel": "Startup time",
+  "copy": "Copy",
+  "askClaudeApp": "Ask in the Claude app",
+  "chipChoice": "Word choice",
+  "chipOrigin": "Origin",
+  "chosenTranslation": "Claude · chosen",
+  "etymologyAskPrompt": "Tell me the origin of «{term}» ({lang}): its path from Latin and other languages, why it is named so, related words in Spanish, Russian and English, the history of the expression. Briefly.",
+  "@etymologyAskPrompt": {"placeholders": {"term": {"type": "String"}, "lang": {"type": "String"}}},
+  "etymologyRebuild": "Write again",
+  "etymologyWriting": "Claude is writing the page…",
+  "etymologyPhoneHint": "Origin pages are written by Claude. Turn on «Claude via your computer» (Settings - AI assistant) or load the exchange file — it carries the pages written on the computer.",
+  "etymologyCertainty": "{certainty, select, documented{documented} probable{probable} disputed{disputed} folk{folk story} other{?}}",
+  "@etymologyCertainty": {"placeholders": {"certainty": {"type": "String"}}},
+  "etymologyChain": "The word's path",
+  "etymologyWhy": "Why it is named so",
+  "etymologyIdiomStory": "Where the expression comes from",
+  "etymologyHistory": "History",
+  "etymologyRelatives": "Related words",
+  "etymologyFalseFriends": "False friends",
+  "etymologyMnemonic": "Remember",
+  "etymologySources": "Source",
+  "etymologyNoSources": "No dictionary entry — from general knowledge",
+  "wordChoiceAskPrompt": "I am translating into Spanish: «{source}». Machine translation: «{translation}». I do not like the word: {focus}. Suggest options with their nuances and rewrite the sentence with each.",
+  "@wordChoiceAskPrompt": {"placeholders": {"source": {"type": "String"}, "translation": {"type": "String"}, "focus": {"type": "String"}}},
+  "wordChoiceTitle": "Word choice",
+  "wordChoiceNow": "Current translation:",
+  "wordChoicePick": "Which word should be better? Tap it — or pick none for the whole sentence.",
+  "wordChoiceHintLabel": "What you want to say (optional)",
+  "wordChoiceHintExample": "e.g. to contribute, not to bring a thing",
+  "wordChoiceRunSentence": "Find options",
+  "wordChoiceRunWord": "Options for «{word}»",
+  "@wordChoiceRunWord": {"placeholders": {"word": {"type": "String"}}},
+  "wordChoiceNoAiDesktop": "Without AI these are dictionary options. Connect Claude in Settings for explanations and ready sentences.",
+  "wordChoiceNoAiPhone": "Without AI these are dictionary options. Turn on «Claude via your computer» in Settings for explanations and ready sentences.",
+  "wordChoiceUse": "Use",
+  "wordChoiceDictionaryNote": "Dictionary options: the back-translation next to each shows its sense.",
+  "wordChoiceFit": "{fit, select, best{best} good{fits} possible{possible} wrong{not this} other{}}",
+  "@wordChoiceFit": {"placeholders": {"fit": {"type": "String"}}},
+  "wordChoiceOrigin": "Origin?",
+  "tabIdeas": "Ideas",
+  "ideasTitle": "Ideas",
+  "ideasEmpty": "Thoughts for articles and inventions gather here. Create a project and describe its context — then just dictate on the go. In the background I add punctuation, search the web for what is already known, and assemble a draft.",
+  "ideasNewProject": "New project",
+  "ideasDictate": "Dictate",
+  "ideasProjectTitleLabel": "Title",
+  "ideasContextLabel": "Context: what it is about, for whom, what matters",
+  "ideasKindArticle": "Article",
+  "ideasKindInvention": "Invention",
+  "ideasKindOther": "Other",
+  "ideasCreate": "Create",
+  "ideasCounts": "thoughts: {notes} · sources: {sources}",
+  "@ideasCounts": {"placeholders": {"notes": {"type": "int"}, "sources": {"type": "int"}}},
+  "ideasContext": "Context",
+  "ideasEditContext": "Edit project",
+  "ideasSources": "Sources",
+  "ideasAddSource": "Add",
+  "ideasAddText": "Paste text",
+  "ideasAddUrl": "Link to an article",
+  "ideasAddFile": "File (txt, md, html, pdf)",
+  "ideasUrlLabel": "Page address",
+  "ideasTextLabel": "Text",
+  "ideasAdding": "Loading…",
+  "ideasSourceText": "Text",
+  "ideasFound": "Found by search",
+  "ideasNotes": "Thoughts",
+  "ideasNoNotes": "No thoughts yet — tap «Dictate».",
+  "ideasStatusQueued": "queued",
+  "ideasStatusWorking": "searching and analysing…",
+  "ideasStatusOffline": "waiting for AI",
+  "ideasStatusFailed": "failed",
+  "ideasRetry": "Analyse again",
+  "ideasInsight": "Analysis",
+  "ideasWithWeb": "with search",
+  "ideasDraft": "Assemble a draft",
+  "ideasDrafting": "Assembling the draft…",
+  "ideasDraftLabel": "Draft",
+  "ideasShare": "Share (Markdown)",
+  "ideasDelete": "Delete project",
+  "ideasDeleteConfirm": "Delete «{title}» with all its thoughts and sources?",
+  "@ideasDeleteConfirm": {"placeholders": {"title": {"type": "String"}}},
+  "ideasRaw": "Original dictation",
+  "ideasNoAi": "Without AI thoughts are only saved. Claude adds punctuation, searches and analyses: connect it (Settings - AI assistant) or sync with your computer.",
+  "ideasWebLabel": "Search the web for ideas",
+  "ideasWebHint": "Claude looks for prior art, facts and sources for each thought. With an API key: up to 5 searches per thought, $10 per 1,000 searches.",
+  "dictationListening": "Listening",
+  "dictationPaused": "Paused",
+  "dictationNewNote": "New thought",
+  "dictationStop": "Stop",
+  "dictationResume": "Continue",
+  "dictationHint": "Speak freely, pauses are fine. «New thought» starts the next one, «what do you think?» — Claude answers and asks, «stop recording» ends. You can turn the screen off.",
+  "dictationSaved": "thoughts saved: {n}",
+  "@dictationSaved": {"placeholders": {"n": {"type": "int"}}},
+  "dictationNoVoice": "No speech recognition on this device — type the thought.",
+  "dictationError": "Recognition stopped ({error}). Tap «Continue».",
+  "@dictationError": {"placeholders": {"error": {"type": "String"}}},
+  "dictationTypeHint": "Thought",
+  "dictationSave": "Save",
+  "anthropicKeyHelp": "Create a key at console.anthropic.com → API keys. API requests are billed separately from a claude.ai subscription. With a key Claude works on the phone too — no PC needed.",
+  "dictationReconnecting": "Reconnecting recognition: {reason}",
+  "@dictationReconnecting": {"placeholders": {"reason": {"type": "String"}}},
+  "dictationTroubleNet": "no connection",
+  "dictationTroubleMic": "the microphone is busy",
+  "dictationTroubleBackground": "Android gives no microphone in the background — turn the screen on",
+  "dictationTroubleBusy": "the recogniser is busy",
+  "dictationErrPermission": "no microphone access — allow it for LinguaTrace in the phone settings",
+  "dictationErrLanguage": "this language is not recognised on the phone — add it in Google voice typing settings",
+  "dictationErrInit": "speech recognition unavailable — check microphone access and Google voice typing",
+  "dictationErrNoRecognizer": "the phone has no speech recognition service (the Google app is needed)",
+  "dictationMuteBeeps": "No beeps: mute media sound while recording",
+  "dictationLog": "Recognition log",
+  "dictationLogHint": "If dictation misbehaves, copy the log and send it.",
+  "dictationLogEmpty": "The log is empty.",
+  "dictationCopy": "Copy",
+  "dictationCopied": "Copied",
+  "syncServerTitle": "Sync server",
+  "syncServerHint": "Your own server where every device's data comes together (the program in the project's server folder). The phone and computers exchange through it by themselves: at start, every 10 minutes and after dictation.",
+  "syncServerUrlLabel": "Server address",
+  "syncServerKeyLabel": "Access key",
+  "syncServerNow": "Sync with the server",
+  "syncServerSent": "This device's data was sent to the server.",
+  "dictationDiscuss": "Discuss",
+  "dictationThinking": "Claude is thinking…",
+  "dictationSpeaking": "Claude is speaking…",
+  "dictationStopSpeaking": "Interrupt",
+  "dictationBluetooth": "Bluetooth headset microphone",
+  "dictationDiscussFailed": "Claude did not answer: {error}",
+  "@dictationDiscussFailed": {"placeholders": {"error": {"type": "String"}}},
+  "ideasClaude": "Claude"
+}

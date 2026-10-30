@@ -1,0 +1,29 @@
+[
+  {"id": "elpais", "name": "El País", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada", "lang": "es", "variety": "es-ES", "topic": "general", "enabled": true},
+  {"id": "20minutos", "name": "20minutos", "url": "https://www.20minutos.es/rss", "lang": "es", "variety": "es-ES", "topic": "general", "enabled": true},
+  {"id": "elmundo", "name": "El Mundo", "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml", "lang": "es", "variety": "es-ES", "topic": "general", "enabled": true},
+  {"id": "lavanguardia", "name": "La Vanguardia", "url": "https://www.lavanguardia.com/rss/home.xml", "lang": "es", "variety": "es-ES", "topic": "general", "enabled": true},
+  {"id": "elconfidencial", "name": "El Confidencial", "url": "https://rss.elconfidencial.com/espana/", "lang": "es", "variety": "es-ES", "topic": "general", "enabled": true},
+  {"id": "bbc-mundo", "name": "BBC News Mundo", "url": "https://feeds.bbci.co.uk/mundo/rss.xml", "lang": "es", "variety": "es-419", "topic": "general", "enabled": true},
+  {"id": "dw-es", "name": "DW Español", "url": "https://rss.dw.com/xml/rss-sp-all", "lang": "es", "variety": "es-419", "topic": "general", "enabled": true},
+  {"id": "rfi-es", "name": "RFI Español", "url": "https://www.rfi.fr/es/rss", "lang": "es", "variety": "es-419", "topic": "general", "enabled": true},
+
+  {"id": "elpais-america", "name": "El País América", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/america/portada", "lang": "es", "variety": "es-419", "topic": "general", "enabled": false},
+  {"id": "infobae", "name": "Infobae", "url": "https://www.infobae.com/arc/outboundfeeds/rss/?outputType=xml", "lang": "es", "variety": "es-419", "topic": "general", "enabled": false},
+  {"id": "clarin", "name": "Clarín", "url": "https://www.clarin.com/rss/lo-ultimo/", "lang": "es", "variety": "es-AR", "topic": "general", "enabled": false},
+  {"id": "lanacion", "name": "La Nación", "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/?outputType=xml", "lang": "es", "variety": "es-AR", "topic": "general", "enabled": false},
+  {"id": "eltiempo", "name": "El Tiempo", "url": "https://www.eltiempo.com/rss/colombia.xml", "lang": "es", "variety": "es-CO", "topic": "general", "enabled": false},
+  {"id": "france24-es", "name": "France 24 Español", "url": "https://www.france24.com/es/rss", "lang": "es", "variety": "es-419", "topic": "general", "enabled": false},
+  {"id": "elpais-ciencia", "name": "El País · Ciencia", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/ciencia/portada", "lang": "es", "variety": "es-ES", "topic": "ciencia", "enabled": false},
+  {"id": "elpais-tecnologia", "name": "El País · Tecnología", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/tecnologia/portada", "lang": "es", "variety": "es-ES", "topic": "tecnologia", "enabled": false},
+  {"id": "elpais-cultura", "name": "El País · Cultura", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/cultura/portada", "lang": "es", "variety": "es-ES", "topic": "cultura", "enabled": false},
+  {"id": "elpais-economia", "name": "El País · Economía", "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada", "lang": "es", "variety": "es-ES", "topic": "economia", "enabled": false},
+
+  {"id": "meduza", "name": "Meduza", "url": "https://meduza.io/rss/all", "lang": "ru", "variety": "ru", "topic": "general", "enabled": false},
+  {"id": "bbc-russian", "name": "BBC News Русская служба", "url": "https://feeds.bbci.co.uk/russian/rss.xml", "lang": "ru", "variety": "ru", "topic": "general", "enabled": false},
+  {"id": "dw-ru", "name": "DW на русском", "url": "https://rss.dw.com/xml/rss-ru-all", "lang": "ru", "variety": "ru", "topic": "general", "enabled": false},
+
+  {"id": "bbc-news", "name": "BBC News", "url": "https://feeds.bbci.co.uk/news/world/rss.xml", "lang": "en", "variety": "en-GB", "topic": "general", "enabled": false},
+  {"id": "guardian-world", "name": "The Guardian", "url": "https://www.theguardian.com/world/rss", "lang": "en", "variety": "en-GB", "topic": "general", "enabled": false},
+  {"id": "dw-en", "name": "DW English", "url": "https://rss.dw.com/xml/rss-en-all", "lang": "en", "variety": "en-GB", "topic": "general", "enabled": false}
+]

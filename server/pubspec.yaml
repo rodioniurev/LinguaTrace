@@ -1,0 +1,15 @@
+name: linguatrace_sync
+description: >-
+  LinguaTrace sync server — a small store of exchange files, one per device.
+  The app merges them; the server only keeps them.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  crypto: ^3.0.3
+
+dev_dependencies:
+  test: ^1.25.0

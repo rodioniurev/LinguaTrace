@@ -1,0 +1,33 @@
+# Сборка и кэши
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+**/ephemeral/
+.gradle/
+.kotlin/
+.cxx/
+__pycache__/
+*.pyc
+*.log
+hs_err_pid*
+replay_pid*
+
+# Среды разработки
+.idea/
+.vscode/
+*.iml
+local.properties
+
+# Подписи, ключи и данные сервера
+key.properties
+*.jks
+*.keystore
+.env
+server/keys.txt
+server/data/
+
+# Системные файлы
+Thumbs.db
+desktop.ini
+.DS_Store

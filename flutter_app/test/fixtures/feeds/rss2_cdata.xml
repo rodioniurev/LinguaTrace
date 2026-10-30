@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-made fixture: invented texts, no real articles. -->
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diario de Prueba</title>
+    <link>https://diario.example/</link>
+    <description>Fixture hecho a mano</description>
+    <atom:link href="https://diario.example/rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[ El Gobierno aprueba el plan de vivienda &amp; alquiler ]]></title>
+      <link>https://Diario.Example/economia/plan-vivienda.html?utm_source=rss&amp;utm_medium=feed&amp;id=42#comentarios</link>
+      <guid isPermaLink="false">diario-42</guid>
+      <description><![CDATA[<p>El Consejo de Ministros aprobó este martes un plan&nbsp;para ampliar el parque de vivienda pública en <b>toda</b> España. La medida costará 3.000 millones de euros.</p><p>Un tercer párrafo que no debe entrar en la entradilla.</p> <a href="https://diario.example/economia/plan-vivienda.html">Leer más</a><img src="https://diario.example/foto.jpg"/>]]></description>
+      <content:encoded><![CDATA[<p>CUERPO COMPLETO DEL ARTÍCULO que nunca debe leerse.</p>]]></content:encoded>
+      <media:description>Descripción multimedia que no se usa</media:description>
+      <media:title>Título multimedia que no se usa</media:title>
+      <pubDate>Sat, 26 Sep 2026 17:30:00 +0200</pubDate>
+      <category><![CDATA[Economía]]></category>
+      <category>Vivienda</category>
+      <category>vivienda</category>
+    </item>
+    <item>
+      <title>La Luna tendrá su propia zona horaria, según la ESA</title>
+      <link>https://diario.example/ciencia/luna-hora.html</link>
+      <description>&lt;p&gt;La Agencia Espacial Europea propone una hora lunar común para coordinar las misiones de EE. UU. y Europa. El sistema se probará en 2028 y servirá a los futuros astronautas. Un tercer enunciado sobra.&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p>OTRO CUERPO que tampoco debe leerse.</p>]]></content:encoded>
+      <dc:date>2026-09-26T09:15:00Z</dc:date>
+    </item>
+  </channel>
+</rss>

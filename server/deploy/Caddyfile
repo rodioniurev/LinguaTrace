@@ -1,0 +1,9 @@
+# HTTPS in front of the sync server: Caddy gets and renews the certificate
+# itself. Replace the name with your domain (its DNS must point here).
+lt.example.com {
+	encode gzip
+	request_body {
+		max_size 110MB
+	}
+	reverse_proxy 127.0.0.1:8790
+}

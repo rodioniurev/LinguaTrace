@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-made fixture for the item filters; tests use now = 2026-09-26T18:00:00Z.
+     Only the items marked KEEP may survive. -->
+<rss version="2.0">
+<channel>
+<title>Filtros</title>
+<link>https://filtros.example/</link>
+<description>Fixture hecho a mano</description>
+
+<!-- live: "en directo" in the headline -->
+<item>
+<title>Guerra en Ucrania, en directo: últimas noticias del frente</title>
+<link>https://filtros.example/internacional/guerra-ucrania</link>
+<description>Los combates continúan en el este del país mientras las delegaciones negocian un alto el fuego temporal.</description>
+<pubDate>Sat, 26 Sep 2026 17:00:00 GMT</pubDate>
+</item>
+
+<!-- live: leading red dot -->
+<item>
+<title>🔴 Temporal en Valencia: evacuados cientos de vecinos</title>
+<link>https://filtros.example/valencia/temporal</link>
+<description>Protección Civil ha activado la alerta roja en la comarca y recomienda no utilizar el coche durante la tarde.</description>
+<pubDate>Sat, 26 Sep 2026 16:00:00 GMT</pubDate>
+</item>
+
+<!-- live: "Directo |" -->
+<item>
+<title>Directo | Elecciones en Galicia: resultados y reacciones</title>
+<link>https://filtros.example/galicia/elecciones</link>
+<description>Los colegios electorales cerraron a las ocho de la tarde con una participación ligeramente superior a la anterior.</description>
+<pubDate>Sat, 26 Sep 2026 15:00:00 GMT</pubDate>
+</item>
+
+<!-- live: only the lead gives it away -->
+<item>
+<title>Protesta por la vivienda en el centro de Madrid</title>
+<link>https://filtros.example/madrid/protesta-vivienda</link>
+<description>Sigue la última hora de la protesta por la vivienda en Madrid, con todos los detalles del recorrido.</description>
+<pubDate>Sat, 26 Sep 2026 14:00:00 GMT</pubDate>
+</item>
+
+<!-- live: only the URL slug gives it away -->
+<item>
+<title>La marcha contra los desahucios llega al Congreso</title>
+<link>https://filtros.example/madrid/marcha-desahucios-en-directo</link>
+<description>Miles de personas recorren el centro de la capital para exigir cambios en la ley hipotecaria y más vivienda social.</description>
+<pubDate>Sat, 26 Sep 2026 13:00:00 GMT</pubDate>
+</item>
+
+<!-- live: English live-blog marker -->
+<item>
+<title>Russia-Ukraine war live: Zelensky meets allies in Kyiv</title>
+<link>https://filtros.example/en/ukraine-war-updates</link>
+<description>European leaders arrived in the capital on Saturday morning to discuss air defence and reconstruction funding.</description>
+<pubDate>Sat, 26 Sep 2026 12:00:00 GMT</pubDate>
+</item>
+
+<!-- KEEP: "live" as a plain verb -->
+<item>
+<title>People who live near the volcano return to their homes</title>
+<link>https://filtros.example/en/volcano-residents</link>
+<description>Authorities lifted the evacuation order on Friday after three weeks of seismic activity on the island.</description>
+<pubDate>Sat, 26 Sep 2026 11:00:00 GMT</pubDate>
+</item>
+
+<!-- stub: lead shorter than 60 chars -->
+<item>
+<title>El Real Madrid ficha a un nuevo portero</title>
+<link>https://filtros.example/deportes/portero</link>
+<description>Vídeo del fichaje.</description>
+<pubDate>Sat, 26 Sep 2026 10:00:00 GMT</pubDate>
+</item>
+
+<!-- stub: two-word headline -->
+<item>
+<title>Resumen semanal</title>
+<link>https://filtros.example/resumen</link>
+<description>Todo lo que ha pasado esta semana en política, economía, cultura y deportes, en un solo lugar.</description>
+<pubDate>Sat, 26 Sep 2026 09:00:00 GMT</pubDate>
+</item>
+
+<!-- stale: five days old -->
+<item>
+<title>La cosecha de aceite bate récords en Jaén</title>
+<link>https://filtros.example/andalucia/aceite</link>
+<description>Las cooperativas prevén la mayor producción de la década gracias a las lluvias de la primavera pasada.</description>
+<pubDate>Mon, 21 Sep 2026 10:00:00 +0200</pubDate>
+</item>
+
+<!-- KEEP: exactly 72 h old -->
+<item>
+<title>Los embalses recuperan agua tras las lluvias de septiembre</title>
+<link>https://filtros.example/clima/embalses</link>
+<description>La reserva hídrica sube cuatro puntos en una semana y se sitúa por encima de la media de la última década.</description>
+<pubDate>Wed, 23 Sep 2026 18:00:00 GMT</pubDate>
+</item>
+
+<!-- stale: one minute past 72 h -->
+<item>
+<title>Un tren de alta velocidad une ya Madrid y Asturias</title>
+<link>https://filtros.example/transporte/tren-asturias</link>
+<description>El nuevo servicio reduce el viaje a tres horas y ofrecerá doce frecuencias diarias desde el próximo lunes.</description>
+<pubDate>Wed, 23 Sep 2026 17:59:00 GMT</pubDate>
+</item>
+
+<!-- KEEP: no date at all -->
+<item>
+<title>Los museos estatales serán gratuitos los domingos</title>
+<link>https://filtros.example/cultura/museos-gratis</link>
+<description>El Ministerio de Cultura amplía la gratuidad a dieciséis museos a partir de octubre para atraer a más público joven.</description>
+</item>
+
+<!-- duplicate of the previous URL (host case, tracker, fragment) -->
+<item>
+<title>Museos gratis los domingos en toda España</title>
+<link>https://FILTROS.example/cultura/museos-gratis?utm_campaign=portada#arriba</link>
+<description>El Ministerio de Cultura amplía la gratuidad a dieciséis museos a partir de octubre para atraer a más público joven.</description>
+<pubDate>Sat, 26 Sep 2026 08:00:00 GMT</pubDate>
+</item>
+
+<!-- KEEP: one long sentence, must be cut to 400 chars on a word boundary -->
+<item>
+<title>Un informe detalla el estado de las carreteras españolas</title>
+<link>https://filtros.example/motor/informe-carreteras</link>
+<description>El informe anual de la asociación de conductores, elaborado a partir de inspecciones realizadas en más de dos mil tramos de carreteras nacionales, autonómicas y provinciales durante los meses de primavera y verano, concluye que casi la mitad de las vías presentan deficiencias en el firme, la señalización horizontal o las barreras de seguridad, y reclama al Ministerio de Transportes un plan de inversión plurianual que priorice los tramos con mayor siniestralidad y los accesos a los núcleos rurales más aislados del interior peninsular</description>
+<pubDate>Sat, 26 Sep 2026 07:00:00 GMT</pubDate>
+</item>
+
+<!-- shop page: advertising, not news -->
+<item>
+<title>Las mejores freidoras de aire con descuento esta semana</title>
+<link>https://filtros.example/escaparate/hogar/freidoras-de-aire</link>
+<description>Seleccionamos los modelos más vendidos con rebajas de hasta el 40 % en las principales tiendas online.</description>
+<pubDate>Sat, 26 Sep 2026 05:00:00 GMT</pubDate>
+</item>
+
+<!-- KEEP: the description repeats the headline first -->
+<item>
+<title>Barcelona limita los cruceros en el puerto</title>
+<link>https://filtros.example/barcelona/cruceros</link>
+<description>Barcelona limita los cruceros en el puerto. El Ayuntamiento reducirá las escalas a la mitad a partir de 2027 para aliviar la presión turística.</description>
+<pubDate>Sat, 26 Sep 2026 06:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

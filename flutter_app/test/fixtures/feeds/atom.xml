@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hand-made fixture: invented texts, no real articles. -->
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <title>Revista de Prueba</title>
+  <id>https://revista.example/</id>
+  <updated>2026-09-26T12:00:00+02:00</updated>
+  <link rel="self" href="https://revista.example/atom.xml"/>
+  <entry>
+    <title type="html">Madrid estrena &lt;em&gt;carriles bici&lt;/em&gt; en la Castellana</title>
+    <link rel="enclosure" type="image/jpeg" href="https://revista.example/img/bici.jpg"/>
+    <link rel="alternate" type="text/html" href="https://revista.example/madrid/carriles-bici"/>
+    <id>tag:revista.example,2026:1001</id>
+    <published>2026-09-26T10:00:00+02:00</published>
+    <updated>2026-09-26T11:30:00+02:00</updated>
+    <summary type="html">&lt;p&gt;El Ayuntamiento abre hoy doce kilómetros de carril protegido. Los ciclistas llevaban una década pidiéndolo.&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;TEXTO ÍNTEGRO que no debe usarse.&lt;/p&gt;</content>
+    <category term="movilidad" label="Movilidad"/>
+    <category term="madrid"/>
+  </entry>
+  <entry>
+    <title>Un estudio vincula dormir poco con peor memoria</title>
+    <link href="/salud/sueno-memoria"/>
+    <id>https://revista.example/salud/sueno-memoria</id>
+    <updated>2026-09-25T20:00:00Z</updated>
+    <summary>Investigadores de la Universidad de Granada siguieron a 500 voluntarios durante dos años y hallaron que dormir menos de seis horas empeora el recuerdo.</summary>
+  </entry>
+</feed>
